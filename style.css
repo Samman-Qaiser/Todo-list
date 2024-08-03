@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'neuro';
+    src: url("/neuropol\ x\ rg.otf");
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    font-family: 'NB International';
+
+    background: linear-gradient(90deg,#7C95BF,#141B25);
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  
+   
+}
+.loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: #141B25;
+    z-index: 6;
+    position: fixed;
+    top:0;
+    color: white;
+    font-family: 'neuro';
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loader h1{
+  
+    overflow-x: hidden;
+}
+.loader img{
+    width: 20%;
+  
+}
+.loader h1 span{
+    display: inline-block;
+    padding: 0.1rem;
+}
+.container{
+     margin-top: 3%;
+     margin-left: 1%;
+    background-color: rgb(228, 228, 234);
+    width: 40%;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    overflow-x: hidden;
+  
+}
+.header{
+  
+    color: #2a4494;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  backdrop-filter: blur(4px);
+    padding: 1rem;
+    background-color:rgba(0, 0, 0, 0.215);
+    text-align: center;
+    font-family: 'Product Sans';
+
+}
+.head-img{
+    background-image: url(https://images.unsplash.com/photo-1639615918687-f7a27df06eea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGluayUyMG9jZWFufGVufDB8fDB8fHww);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header h2{
+font-size: 3rem;
+color: white;
+font-family: 'neuro';
+
+}
+.header>div{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+input{
+    border: 1px solid rgb(186, 182, 182);
+    border-radius: 0.5rem;   
+    padding: 0.7rem 2rem;
+    width: 80%;
+outline:none
+
+}
+.body{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.ri-add-circle-fill{
+    font-size: 3rem;
+    color: #4caf50;
+}
+input::placeholder{
+    color: #44a7ef;
+}
+input:hover{
+border: 2px solid #44a7ef;
+}
+.alert-error{
+
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+ul{
+    list-style: none;
+width: 100%;
+
+
+}
+li{
+    list-style: none;
+font-size: 1.4rem;
+    cursor: pointer;
+ width: 95%;
+transform: translateX(-7%);
+    height: 40px;
+    margin: auto;
+    border: 1px solid rgb(186, 182, 182);
+    border-radius: 0.3rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding:0 0.5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.6rem;
+    background: #fff;
+}
+.adding-list li:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+li p{
+    font-size: 1rem;
+}
+.task-list{
+    width: 100%;
+
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ i{
+
+cursor: pointer;
+
+transition: all linear 0.4s;
+}
+li i{
+   background-color: #2a4494;
+ color: white;
+ padding: 0.3rem;
+ font-size: 1rem;
+ border-radius: 0.2rem;
+ margin-left: 0.4rem;
+}
+.bin:hover{
+    background-color: red;
+    transform: scale(1.1);
+    border-radius: 50%;
+}
+
+.pen:hover{
+    background-color: rgb(138, 210, 29);
+    transform: scale(1.1);
+    border-radius: 50%;
+}
+.ri-add-circle-fill:hover{
+transform: scale(1.1);
+color: #388e3c;
+}
+
+li div{
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"] {
+    width: 20px;   
+    height: 20px;    
+    cursor: pointer;  
+  
+}
+input[type="checkbox"]:checked + p {
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
+video{
+    width: 60px;
+    transform: translateX(-50%);
+  
+}
